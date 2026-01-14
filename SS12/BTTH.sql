@@ -109,10 +109,10 @@ select * from vw_public_users;
 select * from Users;           
 
 -- Bài 3: INDEX username (UNIQUE thường đã có index, nhưng tạo theo yêu cầu bài)
-create index idx_users_username on Users(username);
+create index idx_users_username ON Users(username);
 
 -- test tìm theo username
-explain * from Users where username = 'an';
+EXPLAIN SELECT * FROM Users WHERE username = 'an';
 
 
 /* =========================================================
